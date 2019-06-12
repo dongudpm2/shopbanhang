@@ -15,7 +15,7 @@
 	<form method="post" enctype="multipart/form-data">
     	<table border="1">
         	<tr>
-            	<th colspan="5"> <h1> Giỏi hàng</h1></th>
+            	<th colspan="5"> <h1> Giỏ hàng</h1></th>
             </tr>
             <tr>
             	<td> Tên Món ăn </td>
