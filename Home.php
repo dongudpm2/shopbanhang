@@ -19,16 +19,19 @@ include('connect.php');
 	{
 	$ma=$row['id'];
 	$ten=$row['ten'];
+	$sl=$row['sl'];
 	$gia=$row['gia'];
 	$anh=$row['anh'];
  ?>
-<form style="background-color:#2d2d30">
+<form style="background-color:#2d2d30" enctype="multipart/form-data">
 <div id="than" style="float:left; background:#2d2d30" >
 <table>
 <tr><td><img src="anh/<?php echo $anh ?>" width="200px" height="200px"></td></tr>
+<tr><td>Mã SP: <?php echo $ma ?></td></tr>
 <tr ><td  style="color:#FFFFFF">Tên: <?php echo $ten ?></td></tr>
+<tr><td>Số lượng: <?php echo $sl ?></td></tr>
 <tr><td  style="color:#FFFFFF">Giá bán:<?php echo $gia ?> VNĐ </td></tr>
-<tr><td align="center"><input type="button" value="Mua hàng"><a href="Chitiet.php"><input type="button" value="Chi tiết"></a><a href="xoa.php"><input type="button" value="Xóa"></a><a href="sua.php"><input type="button" value="Sửa"></a></td></tr>
+<tr><td align="center"><a href="giohang.php"><input type="button" value="Mua hàng"></a> <a href="Chitiet.php"><input type="button" value="Chi tiết"></a> <a href="xoa.php"><input type="button" value="Xóa"></a> <a href="sua.php"><input type="button" value="Sửa"></a></td></tr>
 </table>
 </div>
 </form></div>
