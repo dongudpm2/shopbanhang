@@ -43,12 +43,12 @@
 	$tp1=$_FILES['anh']['tmp_name'];
 	$tp2=$_FILES['anh']['name'];
 	$up=move_uploaded_file($tp1,'anh/'.$tp2 );
-	$sql="insert into thongtin1(ten,soluong,gia,anh)
+	$sql="insert into muahang(ten,sl,gia,anh)
 values('$ten','$soluong','$gia','$tp2')";
 	$thucthi=mysqli_query($conn,$sql);
 	if($thucthi)echo "thành công";
 	}
-	else echo "<script> alert('Vui lòng thử lại.')</script>";
+	else echo "Vui lòng thử lại.";
 ?>
 </body>
 </html>
