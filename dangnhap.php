@@ -38,7 +38,7 @@ if (isset($_POST['ok']))
 	if($num==1)
 	{ 
 		$_SESSION['tk']=$tk;
-		header('location:home2.php');
+		header('location:home.php');
 		
 	}
 	else echo "<script> alert('Vui lòng thử lại.')</script>";
